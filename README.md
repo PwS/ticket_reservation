@@ -1,6 +1,6 @@
 # ticket_reservation
 
-Flutter Project to do Reseervation ticket
+Flutter Project to do Reservation ticket
 
 ## Getting Started
 

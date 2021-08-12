@@ -1,4 +1,4 @@
-part of 'utils.dart';
+part of 'theme.dart';
 
 Color kPrimaryColor = Color(0xff5C40CC);
 Color kBlackColor = Color(0xff1F1449);

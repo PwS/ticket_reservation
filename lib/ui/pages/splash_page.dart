@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:ticket_reservation/ui/pages/get_started_page.dart';
-import '../../utils/utils.dart';
+import 'package:ticket_reservation/utils/theme/theme.dart';
+import 'package:ticket_reservation/utils/utils.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);

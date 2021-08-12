@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../utils/utils.dart';
+import 'package:ticket_reservation/utils/theme/theme.dart';
 
 class GetStartedPage extends StatelessWidget {
   const GetStartedPage({Key? key}) : super(key: key);
@@ -48,8 +49,9 @@ class GetStartedPage extends StatelessWidget {
                     style: TextButton.styleFrom(
                         backgroundColor: kPrimaryColor,
                         shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(17))),
-                    onPressed: () {},
+                            borderRadius:
+                                BorderRadius.circular(defaultRadius))),
+                    onPressed: () => Navigator.pushNamed(context, '/sign_up'),
                     child: Text(
                       'Get Started',
                       style: kWhiteTextStyle.copyWith(
