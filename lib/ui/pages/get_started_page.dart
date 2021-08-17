@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_reservation/ui/custom_widgets/custom_widgets.dart';
 import '../../utils/utils.dart';
 import 'package:ticket_reservation/utils/theme/theme.dart';
 
@@ -31,7 +32,7 @@ class GetStartedPage extends StatelessWidget {
                       fontWeight: semiBold, fontSize: 32),
                 ),
                 SizedBox(
-                  height: _sizeScreen.sizeHeight(10),
+                  height: _sizeScreen.hp(2),
                 ),
                 Text(
                   'Explore new world with us and let\nyourself get an amazing experiences',
@@ -39,26 +40,15 @@ class GetStartedPage extends StatelessWidget {
                       kWhiteTextStyle.copyWith(fontSize: 16, fontWeight: light),
                   textAlign: TextAlign.center,
                 ),
-                Container(
+                CustomButton(
+                  textButton: 'Get Started',
+                  width: _sizeScreen.wp(56),
                   margin: EdgeInsets.only(
-                      top: _sizeScreen.sizeHeight(25),
-                      bottom: _sizeScreen.sizeHeight(35)),
-                  width: _sizeScreen.sizeWidth(220),
-                  height: _sizeScreen.sizeHeight(30),
-                  child: TextButton(
-                    style: TextButton.styleFrom(
-                        backgroundColor: kPrimaryColor,
-                        shape: RoundedRectangleBorder(
-                            borderRadius:
-                                BorderRadius.circular(defaultRadius))),
-                    onPressed: () => Navigator.pushNamed(context, '/sign_up'),
-                    child: Text(
-                      'Get Started',
-                      style: kWhiteTextStyle.copyWith(
-                          fontSize: 18, fontWeight: medium),
-                    ),
-                  ),
-                )
+                      top: _sizeScreen.hp(12), bottom: _sizeScreen.hp(6)),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/sign_up');
+                  },
+                ),
               ],
             ),
           ),

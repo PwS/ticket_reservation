@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_reservation/ui/custom_widgets/custom_widgets.dart';
 import '../../utils/utils.dart';
 import 'package:ticket_reservation/utils/theme/theme.dart';
 
@@ -11,8 +12,8 @@ class ReviewResultSignUpPage extends StatelessWidget {
 
     Widget userCard() {
       return Container(
-        width: _sizeScreen.sizeWidth(300),
-        height: _sizeScreen.sizeHeight(110),
+        width: _sizeScreen.wp(77),
+        height: _sizeScreen.hp(27),
         padding: EdgeInsets.all(defaultMargin),
         decoration: BoxDecoration(
             image: DecorationImage(
@@ -61,11 +62,14 @@ class ReviewResultSignUpPage extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: _sizeScreen.sizeHeight(25),
+              height: _sizeScreen.hp(7),
             ),
             Text(
               'Balance',
               style: kWhiteTextStyle.copyWith(fontWeight: light),
+            ),
+            SizedBox(
+              height: _sizeScreen.hp(1),
             ),
             Text(
               'IDR 280.000.000',
@@ -81,7 +85,7 @@ class ReviewResultSignUpPage extends StatelessWidget {
 
     Widget tittleStuff() {
       return Container(
-        margin: EdgeInsets.only(top: _sizeScreen.sizeHeight(40)),
+        margin: EdgeInsets.only(top: _sizeScreen.hp(10)),
         child: Text(
           'Big Bonus 🎉',
           style: kBlackTextStyle.copyWith(fontSize: 32, fontWeight: semiBold),
@@ -91,7 +95,7 @@ class ReviewResultSignUpPage extends StatelessWidget {
 
     Widget subTittleStuff() {
       return Container(
-        margin: EdgeInsets.only(top: _sizeScreen.sizeHeight(5)),
+        margin: EdgeInsets.only(top: _sizeScreen.hp(3)),
         child: Text(
           'We give you early credit so that \nyou can buy a flight ticket',
           style: kGreyTextStyle.copyWith(fontSize: 16, fontWeight: light),
@@ -101,21 +105,11 @@ class ReviewResultSignUpPage extends StatelessWidget {
     }
 
     Widget buttonStart() {
-      return Container(
-        margin: EdgeInsets.only(top: _sizeScreen.sizeHeight(25)),
-        width: _sizeScreen.sizeWidth(220),
-        height: _sizeScreen.sizeHeight(27),
-        child: TextButton(
-          style: TextButton.styleFrom(
-              backgroundColor: kPrimaryColor,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(defaultRadius))),
-          onPressed: () => Navigator.pushNamed(context, '/home'),
-          child: Text(
-            'Go To DashBoard',
-            style: kWhiteTextStyle.copyWith(fontSize: 18, fontWeight: medium),
-          ),
-        ),
+      return CustomButton(
+        textButton: 'Goto Dashboard',
+        width: _sizeScreen.wp(56),
+        margin: EdgeInsets.only(top: _sizeScreen.hp(6)),
+        onPressed: () => Navigator.pushNamed(context, '/dashboard'),
       );
     }
 

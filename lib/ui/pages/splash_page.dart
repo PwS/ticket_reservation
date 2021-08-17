@@ -32,9 +32,9 @@ class _SplashPageState extends State<SplashPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              width: _sizeScreen.sizeHeight(100),
-              height: _sizeScreen.sizeWidth(100),
-              margin: EdgeInsets.only(bottom: _sizeScreen.sizeHeight(25)),
+              width: _sizeScreen.hp(14),
+              height: _sizeScreen.wp(25.5),
+              margin: EdgeInsets.only(bottom: _sizeScreen.hp(6.2)),
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage('assets/icons/icon_airplane.png'))),
@@ -43,7 +43,7 @@ class _SplashPageState extends State<SplashPage> {
               'AIRPLANE',
               style: kWhiteTextStyle.copyWith(
                   fontSize: 32, fontWeight: medium, letterSpacing: 10),
-            )
+            ),
           ],
         ),
       ),

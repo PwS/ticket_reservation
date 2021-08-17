@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_reservation/ui/pages/dashboard.dart';
 import 'package:ticket_reservation/ui/pages/get_started_page.dart';
-import 'package:ticket_reservation/ui/pages/main_page.dart';
 import 'package:ticket_reservation/ui/pages/review_result_sign_up_page.dart';
 import 'package:ticket_reservation/ui/pages/sign_up_page.dart';
 import 'package:ticket_reservation/ui/pages/splash_page.dart';
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         '/get_started': (context) => GetStartedPage(),
         '/sign_up': (context) => SignUpPage(),
         '/review_result_sign_up': (context) => ReviewResultSignUpPage(),
-        '/home': (context) => MainPage()
+        '/dashboard': (context) => Dashboard()
       },
     );
   }

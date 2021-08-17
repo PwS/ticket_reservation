@@ -5,16 +5,6 @@ class Screen {
 
   Screen(this.screenSize);
 
-  double sizeHeight(height) {
-    double resultCalculation = screenSize.width / height;
-    return screenSize.height / resultCalculation;
-  }
-
-  double sizeWidth(width) {
-    double resultCalculation = screenSize.width / width;
-    return screenSize.width / resultCalculation;
-  }
-
   double wp(percentage) {
     return percentage / 100 * screenSize.width;
   }
