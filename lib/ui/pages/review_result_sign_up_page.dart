@@ -62,7 +62,7 @@ class ReviewResultSignUpPage extends StatelessWidget {
               ],
             ),
             SizedBox(
-              height: _sizeScreen.hp(7),
+              height: _sizeScreen.hp(4.5),
             ),
             Text(
               'Balance',
