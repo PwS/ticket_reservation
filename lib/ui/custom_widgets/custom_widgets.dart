@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_reservation/ui/pages/detail_page.dart';
 import '../../utils/utils.dart';
 import 'package:ticket_reservation/utils/theme/theme.dart';
 

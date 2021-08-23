@@ -1,22 +1,22 @@
 part of 'theme.dart';
 
-TextStyle kBlackTextStyle = GoogleFonts.poppins(
+TextStyle txtBlackTextStyle = GoogleFonts.poppins(
   color: kBlackColor,
 );
 
-TextStyle kWhiteTextStyle = GoogleFonts.poppins(
+TextStyle txtWhiteTextStyle = GoogleFonts.poppins(
   color: kWhiteColor,
 );
 
-TextStyle kGreyTextStyle = GoogleFonts.poppins(
+TextStyle txtGreyTextStyle = GoogleFonts.poppins(
   color: kGreyColor,
 );
 
-TextStyle kCyanTextStyle = GoogleFonts.poppins(color: kCyanColor);
+TextStyle txtCyanTextStyle = GoogleFonts.poppins(color: kCyanColor);
 
-TextStyle kRedTextStyle = GoogleFonts.poppins(color: kRedColor);
+TextStyle txtRedTextStyle = GoogleFonts.poppins(color: kRedColor);
 
-TextStyle kPurpleTextStyle = GoogleFonts.poppins(color: kPrimaryColor);
+TextStyle txtPurpleTextStyle = GoogleFonts.poppins(color: kPrimaryColor);
 
 FontWeight light = FontWeight.w300;
 FontWeight regular = FontWeight.w400;

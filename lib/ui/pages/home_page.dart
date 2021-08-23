@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ticket_reservation/ui/custom_widgets/custom_widgets.dart';
 import 'package:ticket_reservation/utils/theme/theme.dart';
 import '../../utils/utils.dart';
+import 'destination_tile.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -22,7 +24,7 @@ class HomePage extends StatelessWidget {
                 children: [
                   Text(
                     'Howdy,\nKezia Anne',
-                    style: kBlackTextStyle.copyWith(
+                    style: txtBlackTextStyle.copyWith(
                         fontSize: 24, fontWeight: semiBold),
                     overflow: TextOverflow.ellipsis,
                   ),
@@ -31,7 +33,7 @@ class HomePage extends StatelessWidget {
                   ),
                   Text(
                     'Preview Your Destination',
-                    style: kGreyTextStyle.copyWith(
+                    style: txtGreyTextStyle.copyWith(
                         fontSize: 16, fontWeight: light),
                   )
                 ],
@@ -94,8 +96,55 @@ class HomePage extends StatelessWidget {
       );
     }
 
+    Widget newDestinations() {
+      return Container(
+        margin: EdgeInsets.only(
+            top: 30, left: defaultMargin, right: defaultMargin, bottom: 100),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'New This Year',
+              style: txtBlackTextStyle.copyWith(
+                  fontSize: 18, fontWeight: semiBold),
+            ),
+            DestinationTile(
+              contentTittle: 'Danau Beratan',
+              contentSubTittle: 'Singaraja',
+              imageUrl: 'assets/images/image_destination6.png',
+              ratingDestinationTile: 4.5,
+            ),
+            DestinationTile(
+              contentTittle: 'Sydney Opera',
+              contentSubTittle: 'Australia',
+              imageUrl: 'assets/images/image_destination7.png',
+              ratingDestinationTile: 4.7,
+            ),
+            DestinationTile(
+              contentTittle: 'Roma',
+              contentSubTittle: 'Italy',
+              imageUrl: 'assets/images/image_destination8.png',
+              ratingDestinationTile: 4.8,
+            ),
+            DestinationTile(
+              contentTittle: 'Payung Teduh',
+              contentSubTittle: 'Singapore',
+              imageUrl: 'assets/images/image_destination9.png',
+              ratingDestinationTile: 4.5,
+            ),
+            DestinationTile(
+              contentTittle: 'Hill Key',
+              contentSubTittle: 'Monaco',
+              imageUrl: 'assets/images/image_destination10.png',
+              ratingDestinationTile: 4.7,
+            )
+          ],
+        ),
+      );
+    }
+
     return ListView(
-      children: [headerHomePage(), popularDestination()],
+      children: [headerHomePage(), popularDestination(), newDestinations()],
     );
   }
 }

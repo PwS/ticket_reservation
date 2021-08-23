@@ -14,7 +14,7 @@ class SignUpPage extends StatelessWidget {
         margin: EdgeInsets.only(top: _sizeScreen.hp(2)),
         child: Text(
           'Join us and get\nyour next journey',
-          style: kBlackTextStyle.copyWith(fontSize: 24, fontWeight: semiBold),
+          style: txtBlackTextStyle.copyWith(fontSize: 24, fontWeight: semiBold),
         ),
       );
     }
@@ -96,7 +96,7 @@ class SignUpPage extends StatelessWidget {
         ),
         child: Text(
           'Terms and Conditions',
-          style: kGreyTextStyle.copyWith(
+          style: txtGreyTextStyle.copyWith(
               fontSize: 16,
               fontWeight: light,
               decoration: TextDecoration.underline),

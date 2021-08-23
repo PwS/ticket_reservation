@@ -35,11 +35,11 @@ class ReviewResultSignUpPage extends StatelessWidget {
                     children: [
                       Text(
                         'Name',
-                        style: kWhiteTextStyle.copyWith(fontWeight: light),
+                        style: txtWhiteTextStyle.copyWith(fontWeight: light),
                       ),
                       Text(
                         'PwS',
-                        style: kWhiteTextStyle.copyWith(
+                        style: txtWhiteTextStyle.copyWith(
                             fontSize: 20, fontWeight: medium),
                         overflow: TextOverflow.ellipsis,
                       )
@@ -56,7 +56,7 @@ class ReviewResultSignUpPage extends StatelessWidget {
                 ),
                 Text(
                   'Pay',
-                  style: kWhiteTextStyle.copyWith(
+                  style: txtWhiteTextStyle.copyWith(
                       fontSize: 16, fontWeight: medium),
                 )
               ],
@@ -66,14 +66,14 @@ class ReviewResultSignUpPage extends StatelessWidget {
             ),
             Text(
               'Balance',
-              style: kWhiteTextStyle.copyWith(fontWeight: light),
+              style: txtWhiteTextStyle.copyWith(fontWeight: light),
             ),
             SizedBox(
               height: _sizeScreen.hp(1),
             ),
             Text(
               'IDR 280.000.000',
-              style: kWhiteTextStyle.copyWith(
+              style: txtWhiteTextStyle.copyWith(
                 fontSize: 26,
                 fontWeight: medium,
               ),
@@ -88,7 +88,7 @@ class ReviewResultSignUpPage extends StatelessWidget {
         margin: EdgeInsets.only(top: _sizeScreen.hp(10)),
         child: Text(
           'Big Bonus 🎉',
-          style: kBlackTextStyle.copyWith(fontSize: 32, fontWeight: semiBold),
+          style: txtBlackTextStyle.copyWith(fontSize: 32, fontWeight: semiBold),
         ),
       );
     }
@@ -98,7 +98,7 @@ class ReviewResultSignUpPage extends StatelessWidget {
         margin: EdgeInsets.only(top: _sizeScreen.hp(3)),
         child: Text(
           'We give you early credit so that \nyou can buy a flight ticket',
-          style: kGreyTextStyle.copyWith(fontSize: 16, fontWeight: light),
+          style: txtGreyTextStyle.copyWith(fontSize: 16, fontWeight: light),
           textAlign: TextAlign.center,
         ),
       );
