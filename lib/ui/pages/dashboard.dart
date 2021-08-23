@@ -49,15 +49,7 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       backgroundColor: kBackgroundColor,
       body: Stack(
-        children: [
-          HomePage(),
-          TextButton(
-              child: Text('asd'),
-              onPressed: () {
-                debugPrint('${_sizeScreen.wp(8)} , ${_sizeScreen.hp(0.3)}');
-              }),
-          customBottomNavigation()
-        ],
+        children: [HomePage(), customBottomNavigation()],
       ),
     );
   }

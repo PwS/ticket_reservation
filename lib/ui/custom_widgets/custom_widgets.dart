@@ -7,3 +7,5 @@ part 'custom_button.dart';
 part 'custom_text_form_field.dart';
 part 'custom_button_navigation_item.dart';
 part 'custom_card_destination.dart';
+part 'custom_photo_item.dart';
+part 'custom_interest_place_item.dart';
