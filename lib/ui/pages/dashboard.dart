@@ -16,7 +16,6 @@ class Dashboard extends StatelessWidget {
       return Align(
         alignment: Alignment.bottomCenter,
         child: Container(
-          asd
           width: double.infinity,
           height: _sizeScreen.hp(8),
           margin: EdgeInsets.only(
