@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_reservation/ui/custom_widgets/custom_widgets.dart';
 import 'package:ticket_reservation/ui/pages/home_page.dart';
-import 'package:ticket_reservation/ui/pages/setting_page.dart';
-import 'package:ticket_reservation/ui/pages/transaction_page.dart';
-import 'package:ticket_reservation/ui/pages/wallet_page.dart';
 import '../../utils/utils.dart';
 import 'package:ticket_reservation/utils/theme/theme.dart';
 
@@ -19,6 +16,7 @@ class Dashboard extends StatelessWidget {
       return Align(
         alignment: Alignment.bottomCenter,
         child: Container(
+          asd
           width: double.infinity,
           height: _sizeScreen.hp(8),
           margin: EdgeInsets.only(
