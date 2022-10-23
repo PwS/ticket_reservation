@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ticket_reservation/ui/custom_widgets/custom_widgets.dart';
+import 'package:ticket_reservation/ui/pages/choose_seat_page.dart';
 import 'package:ticket_reservation/utils/theme/theme.dart';
 import 'package:ticket_reservation/utils/utils.dart';
 
@@ -222,7 +223,12 @@ class DetailPage extends StatelessWidget {
                     CustomButton(
                         textButton: 'Book Now',
                         width: _sizeScreen.wp(45),
-                        onPressed: () {})
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ChooseSeatPage()));
+                        })
                   ],
                 ),
               )

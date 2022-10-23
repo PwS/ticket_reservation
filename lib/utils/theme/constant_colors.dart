@@ -9,3 +9,5 @@ Color kRedColor = Color(0xffEB70A5);
 Color kBackgroundColor = Color(0xffFAFAFA);
 Color kTextColor = Color(0xffDBD7EC);
 Color kTransparentColor = Colors.transparent;
+Color kUnAvailableColor = Color(0xFFEBECF1);
+Color kAvailableColor = Color(0xFFE0D9FF);
